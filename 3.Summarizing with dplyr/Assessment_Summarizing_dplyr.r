@@ -35,16 +35,3 @@ NHANES %>%
 #Compute the average and standard deviation for each value of Race1 for males in the age decade 40-49.
 NHANES %>%
   filter(AgeDecade == " 40-49" ,Gender == "male") %>% group_by(Race1)%>%summarise(average = mean(BPSysAve ,na.rm =TRUE ),standard_deviation = sd(BPSysAve,na.rm =TRUE) ) %>% arrange(average)
-
-
-
-
-
-
-
-
-
-
-
-
-
